@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetWell - Cuida de tus Mascotas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <style>
+        .jumbotron {
+            background-image: url('chandosos.jpg') ;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .testimonial {
+            border-left: 4px solid #007bff;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">PetWell</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Características</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Testimonios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Registro</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección Principal -->
+    <section id="home" class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-4">Cuida de tus Mascotas con PetWell</h1>
+            <p class="lead">Tu compañero ideal para el cuidado y bienestar de tus mascotas.</p>
+            <div class="mt-4">
+                <a href="#" class="btn btn-primary mr-3"><i class="fab fa-google-play"></i> Descargar en Google Play</a>
+                <a href="#" class="btn btn-primary"><i class="fab fa-app-store"></i> Descargar en App Store</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Características -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Características Clave</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <h3>Recordatorios de Vacunas</h3>
+                    <p>Recibe notificaciones para mantener al día las vacunas de tus mascotas.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-carrot"></i>
+                    </div>
+                    <h3>Consejos de Nutrición</h3>
+                    <p>Accede a consejos personalizados sobre la alimentación de tus mascotas.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Comunidad de Dueños</h3>
+                    <p>Únete a una comunidad activa de dueños de mascotas para compartir experiencias.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Testimonios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"PetWell ha transformado la forma en que cuido a mi perro. ¡Increíble!"</p>
+                        <p><strong>María Pérez</strong></p>
+                        <img src="maria.jpg" alt="Usuario 1" class="img-fluid rounded-circle mb-2">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Gracias a PetWell, mi gato está más saludable que nunca. Lo recomiendo 100%."</p>
+                        <p><strong>José Rodríguez</strong></p>
+                        <img src="jose.jpg" alt="Usuario 2" class="img-fluid rounded-circle mb-2">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Excelente aplicación. Mi conejo ahora vive mejor gracias a PetWell."</p>
+                        <p><strong>Ana Martínez</strong></p>
+                        <img src="ana.jpg" alt="Usuario 3" class="img-fluid rounded-circle mb-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Registro -->
+    <section id="signup" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <h2 class="mb-4">Suscríbete para recibir noticias y actualizaciones</h2>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Correo Electrónico">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Tipo de Mascota">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Síguenos en:</p>
+                    <i class="fab fa-facebook-square fa-2x mx-2"></i>
+                    <i class="fab fa-twitter-square fa-2x mx-2"></i>
+                    <i class="fab fa-instagram-square fa-2x mx-2"></i>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-12">
+                    <p>Contacto: contacto@petwell.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+</html>
